@@ -1,0 +1,33 @@
+{
+  "name": "logika",
+  "version": "1.0.0",
+  "private": true,
+  "homepage": "http://andraaspar.github.io/logika",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jest": "^22.2.2",
+    "@types/node": "^9.6.4",
+    "@types/react": "^16.3.8",
+    "@types/react-dom": "^16.0.5",
+    "@types/react-redux": "^5.0.16",
+    "babel-core": "^6.26.0",
+    "babel-runtime": "^6.26.0",
+    "bulma": "^0.6.2",
+    "illa": "^13.5.0",
+    "react": "^16.3.1",
+    "react-dom": "^16.3.1",
+    "react-redux": "^5.0.7",
+    "react-scripts-ts": "2.14.0",
+    "redux": "^3.7.2",
+    "typescript": "^2.8.1"
+  },
+  "scripts": {
+    "start": "yarn && yarn lint && react-scripts-ts start",
+    "build": "yarn && yarn lint && react-scripts-ts build",
+    "test": "react-scripts-ts test --env=jsdom",
+    "eject": "react-scripts-ts eject",
+    "lint": "tslint --fix -c ./tslint.fix.json --project ./tsconfig.json",
+    "predeploy": "yarn build",
+    "deploy": "gh-pages -d build"
+  }
+}
